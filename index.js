@@ -15,7 +15,7 @@ app.get('/accounts', function (req, res) {
 })
 
 app.get('/account/:id', function (req, res) {
-  let account = data.accounts.filter(acc => acc.account_id === req.params.id);
+  var account = data.accounts.filter(acc => acc.account_id === req.params.id);
   res.json(account)
 })
 
