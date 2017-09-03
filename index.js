@@ -1,7 +1,7 @@
 const express = require('express')
 var bodyParser = require('body-parser')
 const app = express()
-let data = require('./data')
+var data = require('./data')
 
 app.use(bodyParser.json())
 
